@@ -5,23 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Prooblig 3</title>
-
-    <style>
-        body {
-            overflow: hidden;
-        }
-
-        #canvas {
-            position: absolute;
-            border: 5px solid black;
-            background: red;
-            top: 200;
-            left: 370px;
-            width: 400px;
-            height: 400px;
-            
-        }
-    </style>
 </head>
 <body>
     
@@ -33,6 +16,7 @@
         </ul>
       
     </div>
+    
 
 <div class="overskriftMathias">
     <h1>MathiasBest</h1>
@@ -43,47 +27,6 @@
 
 
 <script>
-   /* 
-
-
-
-
-    svg.setAttribute("width", "100");
-    svg.setAttribute("height", "100");
-
-    function circle (radius, mode, color) {
-        console.log("Tegn en sirkel!")
-        const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        circle.setAttribute("cx", 50);
-        circle.setAttribute("cy", 50);
-        circle.setAttribute("r", radius);
-        if (mode == "outline") {
-            circle.setAttribute("stroke", color);
-        }
-        circle.setAttribute("fill", color);
-        return circle;
-    }
-
-
-    svg.appendChild(circle(50, "solid", "black"));
-    svg.appendChild(circle(25, "solid", "red"));  
-
-
-    svg.setAttribute("width", "100");
-    svg.setAttribute("height", "100");
-    var ctx = svg.getContext("2d");
-
-    
-
-    svg.appendChild(circle(50, "solid", "black"));
-    svg.appendChild(circle(25, "solid", "red"));
-    console.log(svg);
-    
- */
-
-
-
-
 
 
 // figur laget med canvas
@@ -122,17 +65,6 @@ function drawRectangle() {
 
 var rectangle2x = 120;
 var rectangle2y = 390;
-
-function drawRectangle2() {
-    ctx.fillStyle = 'black';
-    ctx.strokeStyle = 'white';
-    ctx.fillRect(rectangle2x, rectangle2y, width, height);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.closePath();
-    ctx.stroke();
-
-}
 
 function drawCircle2() {
     ctx.fillStyle = 'black';

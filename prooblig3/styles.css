@@ -67,7 +67,6 @@ body {
   
   .innhold2 {
     text-align: center;
-
   }
 
   #tekst {
@@ -90,6 +89,9 @@ body {
 
   .menu2 li {
     padding: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .menu2 a {
@@ -98,6 +100,7 @@ body {
     font-weight: bold;
     font-size: 15px;
     transition: color 0.3s ease-in-out;
+ 
   }
 
   .menu2 a:hover {
@@ -107,3 +110,21 @@ body {
   .innhold3 {
     margin-top: 50px;
   }
+
+
+#canvas {
+  overflow: hidden;
+  border: 5px solid black;
+  background: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 400px;
+}
+
+
+.energiforbruk {
+  text-align: center;
+  margin-top: 600px;
+}
