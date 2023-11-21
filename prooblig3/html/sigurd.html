@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Prooblig 3</title>
-
+    
     <style>
         body {
-            overflow: hidden;
+            background-color: darkgreen;
         }
 
         #canvas {
-            position: absolute;
             border: 5px solid black;
-            background: red;
+            background: white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             top: 200;
             left: 370px;
             width: 400px;
@@ -22,6 +24,7 @@
             
         }
     </style>
+
 </head>
 <body>
     
@@ -29,6 +32,11 @@
         <ul>
             <li><a href="index.html">Gruppe 4B</a></li>
             <li><a href="index.html">Home</a></li>
+            <li><a href="mathias.html">Mathias</a></li>
+            <li><a href="gaute.html">Gaute</a></li>
+            <li><a href="tringa.html">Tringa</a></li>
+            <li><a href="ida.html">Ida</a></li>
+            <li><a href="ömer.html">Ömer</a></li>
             <li><a href="oss.html">Om oss</a></li>
         </ul>
       
@@ -38,8 +46,21 @@
     <h1>Sigurd Mæland</h1>
 </div>
 
+<div class="beskrivelse">
+    <p>Hei, mitt navn er Sigurd. Jeg er 20 år gammel og kommer fra Oslo. <br> Jeg er glad i å spille fotball, trene, henge med venner og tilbringe tid med familie.</p>
+</div>
+
 <canvas id="canvas"></canvas>
 
+
+<div class="energiforbruk">
+    <h2>Sigurd's energiforbruk </h2>
+    
+    <p>Laget en egen funksjon for å beregne energiforbruket for bil. </p>
+    <p>Tok i bruk funksjonen "energy-per-day". Valgte en distanse på 15 km per dag, og at bilen kjører 1,5 km per liter, og en energi på 2.  </p>
+
+    <img src="bilder/sigurd-bar-chart.jpg.png" width="400" height="350">
+</div>
 
 
 <script>
@@ -156,9 +177,10 @@ function drawCircle3() {
 function drawCircle5() {
     ctx.fillStyle = 'white';
     ctx.beginPath();
-    ctx.arc(800, 175, 20, 0,  Math.PI * 2);
+    ctx.arc(600, 175, 20, 0,  Math.PI * 2);
     ctx.closePath();
     ctx.fill();
+    ctx.stroke();
 }
 
 function drawCircle4() {
@@ -173,6 +195,7 @@ function drawCircle4() {
 
     function drawTriangle() {
       ctx.fillStyle = 'white';
+      ctx.strokeStyle = 'white';
       ctx.beginPath();
       ctx.moveTo(525, 240);
       ctx.lineTo(575, 240);
