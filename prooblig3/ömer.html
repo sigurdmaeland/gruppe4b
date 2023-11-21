@@ -6,3 +6,99 @@
     <link rel="stylesheet" href="styles.css">
     <title>Prooblig 3</title>
     
+    <style>
+        body {
+            background-color: darkgreen;
+        }
+
+        #canvas {
+            border: 5px solid black;
+            background: white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            top: 200;
+            left: 370px;
+            width: 400px;
+            height: 400px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Gruppe 4B</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oss.html">Om oss</a></li>
+        </ul>
+      
+    </div>
+    
+
+<div class="overskriftMathias">
+    <h1>Ömer Side1</h1>
+</div>
+
+
+<canvas id="canvas"></canvas>
+
+
+<script>
+// Hent lerretet og sett opp konteksten
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+
+// Sett bakgrunnen til lys blå
+ctx.fillStyle = "lightblue"; // Lightblue farge er satt
+ctx.fillRect(0, 0, canvas.width, canvas.height); // Tegner et rektangel som dekker hele lerretområdet
+
+
+// Hus (Boks)
+ctx.fillStyle = "brown";
+ctx.fillRect(75, 150, 150, 100);
+
+// Tak (Trekant)
+ctx.fillStyle = "red";
+ctx.beginPath();
+ctx.moveTo(150, 100);
+ctx.lineTo(50, 150);
+ctx.lineTo(250, 150);
+ctx.closePath();
+ctx.fill();
+
+// Dør
+ctx.fillStyle = "green";
+ctx.fillRect(136, 190, 30, 60);
+
+// Vinduer
+ctx.fillStyle = "lightblue";
+ctx.fillRect(90, 160, 40, 30);
+ctx.fillRect(170, 160, 40, 30);
+
+</script>
+
+
+<svg width="300" height="300">
+  <!-- Bakgrunnen til lys blå -->
+  <rect width="100%" height="100%" style="fill:lightblue;" />
+
+  <!-- Hus (Boks) -->
+  <rect x="75" y="150" width="150" height="100" style="fill:brown;" />
+
+  <!-- Tak (Trekant) -->
+  <polygon points="150,100 45,150 255,150" style="fill:red;" />
+
+  <!-- Dør -->
+  <rect x="136" y="190" width="30" height="60" style="fill:green;" />
+
+  <!-- Vinduer -->
+  <rect x="90" y="160" width="40" height="30" style="fill:lightblue;" />
+  <rect x="170" y="160" width="40" height="30" style="fill:lightblue;" />
+</svg>
+
+</body>
+</html>
