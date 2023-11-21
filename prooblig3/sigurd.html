@@ -177,9 +177,10 @@ function drawCircle3() {
 function drawCircle5() {
     ctx.fillStyle = 'white';
     ctx.beginPath();
-    ctx.arc(800, 175, 20, 0,  Math.PI * 2);
+    ctx.arc(600, 175, 20, 0,  Math.PI * 2);
     ctx.closePath();
     ctx.fill();
+    ctx.stroke();
 }
 
 function drawCircle4() {
@@ -194,6 +195,7 @@ function drawCircle4() {
 
     function drawTriangle() {
       ctx.fillStyle = 'white';
+      ctx.strokeStyle = 'white';
       ctx.beginPath();
       ctx.moveTo(525, 240);
       ctx.lineTo(575, 240);
