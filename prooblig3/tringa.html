@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Prooblig 3</title>
+    
+    <style>
+        body {
+            background-color: rgb(162, 0, 255);
+        }
+
+        #canvas {
+            border: 5px solid black;
+            background: white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            top: 200;
+            left: 370px;
+            width: 400px;
+            height: 400px;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Gruppe 4B</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oss.html">Om oss</a></li>
+        </ul>
+
+    </div>
+
+    <div class="overskriftSigurd">
+        <h1>Tringa Konxheli</h1>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+
+    <script>
+
+        const figures = document.getElementById("canvas");
+        const ctx = figures.getContext("2d");
+        figures.width = window.innerWidth;
+        figures.height = window.innerHeight;
+
+        // brown square
+    var x = 350;
+    var y = 300;
+    var width = 700;
+    var height = 400;
+
+    function drawRectangle() {
+        ctx.fillStyle = 'brown';
+        ctx.beginPath();
+        ctx.fillRect(x, y, width, height);
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    function drawTriangle() {
+      ctx.fillStyle = 'crimson';
+      ctx.beginPath();
+      ctx.moveTo(350, 300);
+      ctx.lineTo(1050, 300);
+      ctx.lineTo(700, 100);
+      ctx.lineTo(350, 300);
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    drawRectangle()
+    drawTriangle()
+
+    </script>
