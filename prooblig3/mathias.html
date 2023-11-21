@@ -48,8 +48,8 @@
 </div>
 
 <div class="beskrivelse">
-    <h2> Heyo, jeg er Mathias. Jeg liker å spille, er fra Sandnes. Jeg er ikke en alkoholiker. </h2>
-    <h2>Jeg er en alkohol-liker</h2>
+    <p> Heyo, jeg er Mathias. Jeg liker å spille, er fra Sandnes. Jeg er ikke en alkoholiker. </p>
+    <p>Jeg er en alkohol-liker</p>
 </div>
 
 <canvas id="canvas"></canvas>
@@ -135,6 +135,15 @@ function drawCircle5() {
     ctx.fill();
 }
 
+function drawCircle6() {
+    ctx.fillStyle = 'black';
+    ctx.beginPath();
+    ctx.arc(500, 175, 15, 0,  Math.PI * 2);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.fill();
+}
+
     function drawTriangle() {
       ctx.fillStyle = 'white';
       ctx.beginPath();
@@ -151,6 +160,7 @@ function drawCircle5() {
         drawCircle3()
         drawCircle4()
         drawCircle5()
+        drawCircle6()
         drawRectangle()
         drawRectangle2()
         drawTriangle()
