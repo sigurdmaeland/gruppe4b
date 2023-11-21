@@ -111,19 +111,6 @@ body {
     margin-top: 50px;
   }
 
-
-#canvas {
-  overflow: hidden;
-  border: 5px solid black;
-  background: red;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  height: 400px;
-}
-
-
 .energiforbruk {
   text-align: center;
   margin-top: 200px;
