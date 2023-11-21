@@ -8,7 +8,7 @@
     
     <style>
         body {
-            background-color: darkgreen;
+            background-color: rgb(100, 90, 0);
         }
 
         #canvas {
@@ -43,7 +43,8 @@
 </div>
 
 <div class="beskrivelse">
-    <h2> test </h2>
+    <h2> Heyo, jeg er Mathias. Jeg liker å spille, er fra Sandnes. Jeg er ikke en alkoholiker. </h2>
+    <h2>Jeg er en alkohol-liker</h2>
 </div>
 
 <canvas id="canvas"></canvas>
@@ -79,25 +80,19 @@ function drawCircle(){
     ctx.stroke(); 
 }
 
-var x = 730;
-var y = 390;
-var width = 250;
+var x = 470;
+var y = 250;
+var width = 140;
 var height = 20;
 
 function drawRectangle() {
-    ctx.fillStyle = 'black';
-    ctx.strokeStyle = 'white';
+    ctx.fillStyle = 'white';
     ctx.lineWidth = 10;
     ctx.fillRect(x, y, width, height);
     ctx.fill();
     ctx.beginPath();
     ctx.closePath();
-    ctx.stroke();
-
 }
-
-var rectangle2x = 120;
-var rectangle2y = 390;
 
 function drawCircle2() {
     ctx.fillStyle = 'black';
@@ -118,19 +113,21 @@ function drawCircle3() {
 }
 
 function drawCircle4() {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'black';
     ctx.beginPath();
     ctx.arc(500, 175, 20, 0,  Math.PI * 2);
     ctx.closePath();
-    ctx.stroke();
+    ctx.stroke(); 
+    ctx.fill
 }
 
 function drawCircle5() {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'black';
     ctx.beginPath();
     ctx.arc(600, 175, 20, 0,  Math.PI * 2);
     ctx.closePath();
     ctx.stroke();
+    ctx.fill();
 }
 
     function drawTriangle() {
