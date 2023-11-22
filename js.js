@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Shapes</title>
-</head>
-<body>
-
-<!-- Canvas for circle -->
 <canvas id="canvasCircle" width="100" height="100" style="border:1px solid #000;"></canvas>
 
-<!-- SVG for circle -->
 <svg id="svgCircle" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
     <circle id="svgCircleElement" cx="50" cy="50" r="40" fill="#ffcc00" stroke="#333" stroke-width="2" />
 </svg>
 
-<!-- Canvas for rectangle -->
 <canvas id="canvasRectangle" width="100" height="100" style="border:1px solid #000;"></canvas>
 
-<!-- SVG for rectangle -->
 <svg id="svgRectangle" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
     <rect id="svgRectangleElement" x="10" y="10" width="80" height="60" fill="#ffcc00" stroke="#333" stroke-width="2" />
 </svg>
 
-<script>
-    // Function to draw a circle using Canvas API
+
     function drawCircleCanvas(radius, color) {
         var canvas = document.getElementById("canvasCircle");
         var context = canvas.getContext("2d");
@@ -66,7 +52,3 @@
     drawCircleSVG(40, "#ffcc00");
     drawRectangleCanvas(80, 60, "#ffcc00");
     drawRectangleSVG(80, 60, "#ffcc00");
-</script>
-
-</body>
-</html>
