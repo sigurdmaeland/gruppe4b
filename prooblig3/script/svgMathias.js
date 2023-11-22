@@ -8,4 +8,3 @@ document.write('<circle cx="115" cy="45" r="7" stroke="white" stroke-width="3" f
 document.write('<circle cx="115" cy="45" r="4" stroke="black" stroke-width="1" fill="black" />');
 document.write('<rect x="83" y="80" width="30" height="1" style="fill:rgb(255, 255, 255);stroke-width:10;stroke:rgb(255, 255, 255)" />');
 document.write('</svg>');
-document.write('');
