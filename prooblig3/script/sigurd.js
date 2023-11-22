@@ -82,19 +82,6 @@ function drawCircle4() {
     ctx.fill();
 }
 
-    var munnX = 490;
-    var munnY = 270;
-    var munnWidth = 120;
-    var munnHeight = 10;
-
-    function drawRectangle3() {
-        ctx.fillStyle = 'white';
-        ctx.beginPath();
-        ctx.fillRect(munnX, munnY, munnWidth, munnHeight);
-        ctx.fill();
-        ctx.closePath();
-
-    }
 
 
     function drawTriangle() {
@@ -116,12 +103,6 @@ function drawCircle4() {
         drawCircle5()
         drawRectangle()
         drawRectangle2()
-        drawRectangle3()
         drawTriangle()
-
-
-
-// SVG
-
 
 
