@@ -5,22 +5,22 @@ figures.height = window.innerHeight;
 
 // Hus (Boks)
 ctx.fillStyle = "brown";
-ctx.fillRect(225, 450, 450, 300);
+ctx.fillRect(725, 450, 450, 300);
 
 // Tak (Trekant)
 ctx.fillStyle = "red";
 ctx.beginPath();
-ctx.moveTo(450, 300);
-ctx.lineTo(150, 450);
-ctx.lineTo(750, 450);
+ctx.moveTo(950, 300);
+ctx.lineTo(650, 450);
+ctx.lineTo(1250, 450);
 ctx.closePath();
 ctx.fill();
 
 // Dør
 ctx.fillStyle = "green";
-ctx.fillRect(408, 570, 90, 180);
+ctx.fillRect(900, 590, 110, 160);
 
 // Vinduer
 ctx.fillStyle = "lightblue";
-ctx.fillRect(210, 480, 120, 90);
-ctx.fillRect(510, 480, 120, 90);
+ctx.fillRect(760, 480, 120, 90);
+ctx.fillRect(1010, 480, 120, 90);
