@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Prooblig 3</title>
     
     <style>
@@ -46,11 +46,15 @@
 </div>
 
 <div class="beskrivelse">
-    <p>Hei, mitt navn er Sigurd. Jeg er 20 år gammel og kommer fra Oslo. <br> Jeg er glad i å spille fotball, trene, henge med venner og tilbringe tid med familie.</p>
+    <p>Hei, mitt navn er Sigurd. Jeg er 20 år gammel og kommer fra Oslo. <br> Jeg er glad i å spille fotball, trene, henge med venner og tilbringe tid med familie. <br>
+       Nedenfor ser du figuren min laget med canvas i javascript:</p>
 </div>
 
 <canvas id="canvas"></canvas>
 
+<div class="beskrivelse">
+<p>Her er GitHub linken til min figur laget i pyret: <a href="https://github.com/sigurdmaeland/prooblig-3/blob/main/sigurd_snowman.arr">Trykk her</a></p>
+</div>
 
 <div class="energiforbruk">
     <h2>Sigurd's energiforbruk </h2>
@@ -62,163 +66,8 @@
 </div>
 
 
-<script>
-   /* 
+<script src="script/sigurd.js"></script>
 
-
-
-
-    svg.setAttribute("width", "100");
-    svg.setAttribute("height", "100");
-
-    function circle (radius, mode, color) {
-        console.log("Tegn en sirkel!")
-        const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        circle.setAttribute("cx", 50);
-        circle.setAttribute("cy", 50);
-        circle.setAttribute("r", radius);
-        if (mode == "outline") {
-            circle.setAttribute("stroke", color);
-        }
-        circle.setAttribute("fill", color);
-        return circle;
-    }
-
-
-    svg.appendChild(circle(50, "solid", "black"));
-    svg.appendChild(circle(25, "solid", "red"));  
-
-
-    svg.setAttribute("width", "100");
-    svg.setAttribute("height", "100");
-    var ctx = svg.getContext("2d");
-
-    
-
-    svg.appendChild(circle(50, "solid", "black"));
-    svg.appendChild(circle(25, "solid", "red"));
-    console.log(svg);
-    
- */
-
-
-
-
-
-
-// figur laget med canvas
-const figures = document.getElementById('canvas');
-const ctx = figures.getContext('2d');
-figures.width = window.innerWidth;
-figures.height = window.innerHeight;
-
-function drawCircle(){
-    ctx.fillStyle = 'black';
-    ctx.strokeStyle = 'white';
-    ctx.lineWidth = 10;
-    ctx.beginPath();
-    ctx.arc(550, 600, 240, 0,  Math.PI * 2);
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke(); 
-}
-
-var x = 730;
-var y = 390;
-var width = 250;
-var height = 20;
-
-function drawRectangle() {
-    ctx.fillStyle = 'black';
-    ctx.strokeStyle = 'white';
-    ctx.lineWidth = 10;
-    ctx.fillRect(x, y, width, height);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.closePath();
-    ctx.stroke();
-
-}
-
-var rectangle2x = 120;
-var rectangle2y = 390;
-
-function drawRectangle2() {
-    ctx.fillStyle = 'black';
-    ctx.strokeStyle = 'white';
-    ctx.fillRect(rectangle2x, rectangle2y, width, height);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.closePath();
-    ctx.stroke();
-
-}
-
-function drawCircle2() {
-    ctx.fillStyle = 'black';
-    ctx.beginPath();
-    ctx.arc(550, 400, 175, 0,  Math.PI * 2);
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke(); 
-}
-
-function drawCircle3() {
-    ctx.fillStyle = 'black';
-    ctx.beginPath();
-    ctx.arc(550, 200, 125, 0,  Math.PI * 2);
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke(); 
-}
-
-
-function drawCircle5() {
-    ctx.fillStyle = 'white';
-    ctx.beginPath();
-    ctx.arc(600, 175, 20, 0,  Math.PI * 2);
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke();
-}
-
-function drawCircle4() {
-    ctx.fillStyle = 'white';
-    ctx.beginPath();
-    ctx.arc(500, 175, 20, 0,  Math.PI * 2);
-    ctx.closePath();
-    ctx.fill();
-}
-
-
-
-    function drawTriangle() {
-      ctx.fillStyle = 'white';
-      ctx.strokeStyle = 'white';
-      ctx.beginPath();
-      ctx.moveTo(525, 240);
-      ctx.lineTo(575, 240);
-      ctx.lineTo(550, 200);
-      ctx.lineTo(525, 240);
-      ctx.closePath();
-      ctx.fill();
-    }
-
-        drawCircle()
-        drawCircle2()
-        drawCircle3()
-        drawCircle4()
-        drawCircle5()
-        drawRectangle()
-        drawRectangle2()
-        drawTriangle()
-
-
-let r1 = rectangle(100, 100, "solid", "blue");
-let r2 = rectangle(200, 200, "solid", "black");
-place_image(r1, 0, 0, r2);
-
-</script>
 
 </body>
 </html>

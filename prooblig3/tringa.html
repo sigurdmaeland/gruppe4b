@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Prooblig 3</title>
 
     <style>
@@ -63,42 +63,7 @@
         <img src="bilder/tringa-bar-chart.jpg.png" width="400" height="350">
     </div>
 
-    <script>
-
-        const figures = document.getElementById("canvas");
-        const ctx = figures.getContext("2d");
-        figures.width = window.innerWidth;
-        figures.height = window.innerHeight;
-
-        // brown square
-        var x = 350;
-        var y = 300;
-        var width = 700;
-        var height = 400;
-
-        function drawRectangle() {
-            ctx.fillStyle = 'brown';
-            ctx.beginPath();
-            ctx.fillRect(x, y, width, height);
-            ctx.fill();
-            ctx.closePath();
-        }
-
-        function drawTriangle() {
-            ctx.fillStyle = 'crimson';
-            ctx.beginPath();
-            ctx.moveTo(350, 300);
-            ctx.lineTo(1050, 300);
-            ctx.lineTo(700, 100);
-            ctx.lineTo(350, 300);
-            ctx.closePath();
-            ctx.fill();
-        }
-
-        drawRectangle()
-        drawTriangle()
-
-    </script>
+    <script src="script/tringa.js"></script>
 
 </body>
 </html>
