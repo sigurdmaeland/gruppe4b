@@ -14,4 +14,4 @@ function drawCircle(radius, color) {
 }
 
 // Examples of using the function:
-drawCircle(500, "red"); // Filled circle with red color
+drawCircle(300, "red"); // Filled circle with red color
