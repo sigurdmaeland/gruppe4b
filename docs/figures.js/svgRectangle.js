@@ -11,4 +11,4 @@ function createRectangle(width, height, color) {
 
     svgContainer.appendChild(rectangle);
 }
-createRectangle(30, 20, "blue");
+createRectangle(300, 20, "blue");
